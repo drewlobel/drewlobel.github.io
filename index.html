@@ -1,1 +1,186 @@
-<p>Test for IP</p>
+<!DOCTYPE html>
+<html>
+<head>
+	
+	 <link rel="icon" type="image/x-icon" href="Poke_Ball.png">
+<style>
+	body {
+	background-color:pink;
+{
+	</style>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
+}
+</style>
+
+<title> PKHeX and CFW Links</title>
+<style>
+
+</style>
+<style>
+.test {
+  font-family: Times New Roman, sans-serif;
+  font-size: 25px;
+}
+</style>
+<style>
+p {
+  text-align: center;
+}
+</style>
+<style>
+.img {
+  text-align: center;
+}
+</style>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<style>
+.hidden {
+font-size: 0
+}
+</style>
+<style>
+.center {
+  text-align: center;
+}
+</style>
+
+
+<style>
+.dark-mode {
+  background-color: black;
+  color: pink;
+}
+</style>
+
+<style>
+.clock {
+  font-size: 25px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+<body onload="startTime()">
+
+
+
+
+<button onclick="myFunction()">Toggle Dark Mode</button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+
+<button onclick="getLocation()">Coordinates</button>
+
+<p id="loc"></p>
+
+<script>
+var x = document.getElementById("loc");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+	</div>
+<div class="clock">
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+</div>
+
+<p  class="test"> Hello World. Below are links that are usefull</p> 
+
+
+
+<a href= "https://remotedesktop.google.com/access/session/4a0b5ff2-3e32-b457-dd9d-c272436d72ff" </a> <p style= "color:brown"> Drew's Wireless Computer </p>
+
+<a href= "https://www.google.com"> <p style= "color: white"> Web Browser</p> </a>
+<a href= "https://github.com/drewlobel/Tools"> <p style= "color: white"> Github page</p></a>
+<a class="link" href= "https://w3schools.com"> <p style= "color: white"> Command List</p> </a>
+<a href= "https://codebeautify.org/htmlviewer"> <p style= "color: white"> Online HTML Editor</p>
+<a href="https://projectpokemon.org/home/files/file/1-pkhex/" </a> <p style="color:red;"> PKHeX</p>
+<a href="https://github.com/architdate/PKHeX-Auto-Legality-Mod"</a>
+<p style="color:red;"> Auto Legality Mod
+</p>
+<a href= "https://projectpokemon.org"</a> <p style="color:red;"> Project Pokemon Page </p> 
+<a href="https://nh-server.github.io/switch-guide/"</a>
+<p style="color:#046D34">Nintendo Switch CFW
+</p>
+
+<a href="https://3ds.hacks.guide/"</a>
+<p style="color:#046D34"> Nintendo 3ds CFW
+</p>
+
+<a href="https://www.amazon.com/Koolertron-Single-Handed-Programmable-Mechanical-Keyboard/dp/B076LRJ528/ref=sr_1_4?crid=16DZI9TY65Z6D&dchild=1&keywords=programmable+keyboard&qid=1626889645&sprefix=programmable+key%2Caps%2C184&sr=8-4"</a>
+<p> Customizable Keybored
+</p>
+
+<a href= "https://www.cnet.com/tech/services-and-software/how-to-use-multiple-desktops-in-windows-10/#:~:text=To%20switch%20between%20virtual%20desktops,Key%20%2B%20Ctrl%20%2B%20Right%20Arrow." </a>
+<p> Windows "desks"
+</p>
+
+<a href= "https://github.com/LoveEevee/Desktop-Pokemon" </a>
+<p> Desktop Pokemon </p> </a>
+
+<a href= "https://www.pokemon.com/us/"> <img src="Poke_Ball.png" hight= "400" width="400"</img> </a> 
+
+<a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="html pink.png" hight= "1" width="1"</img> </a> 
+
+
+<p class="hidden"> 
+This area is for development notes: 
+</p>
+ 
+</body>
+</html>
